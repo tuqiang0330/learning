@@ -3,6 +3,16 @@
 
 HTML_DIR='html_tmp'
 
+PORT=8000
+if [ $# -ne 0 ]
+then
+    if [[ $1 =~ ^[0-9]+$ ]]
+    then
+        PORT=$1
+        echo ${PORT}
+    fi
+fi
+
 mkdir -p ${HTML_DIR}
 
 find . -name "*.md" | while read md_file
@@ -13,4 +23,4 @@ do
 done
 
 cd ${HTML_DIR}
-python -m SimpleHTTPServer 8000
+python -m SimpleHTTPServer ${PORT}

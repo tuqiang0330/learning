@@ -23,4 +23,5 @@ do
 done
 
 cd ${HTML_DIR}
+echo "http://localhost:${PORT}"
 python -m SimpleHTTPServer ${PORT}

@@ -35,3 +35,9 @@
 + [别闹了，费曼先生](http://book.douban.com/subject/1037602/)
 + [失控](http://book.douban.com/subject/5375620/)
 + [黑客与画家](http://book.douban.com/subject/6021440/)
+
+--------------------------------------------------------------------------------
+
+## 网站 ##
++ <https://news.ycombinator.com/>
++ <http://www.infoq.com/cn/>

@@ -15,16 +15,23 @@
         + 分支：至少有一个master
 
 ### 常用命令 ###
-+ 配置提交名字和邮箱
++ 环境配置
 
         $ git config --global user.name "Your Name"
         $ git config --global user.email "email@example.com"
+        $ git config --global color.ui true
+        $ git config --global alias.st status
+        $ git config --global alias.co checkout
+        $ git config --global alias.ci commit
+        $ git config --global alias.branch br
+        $ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 + 创建版本库
 
         $ mkdir project
         $ cd project
         $ git init
+        $ git init --bare project.git   # 创建一个空的版本库等待push
 
 + 编辑文件并提交
 
@@ -43,13 +50,7 @@
         $ git reset --hard commit_id
         $ git reflog
 
-+ 远程版本库
-
-        $ git remote add origin https://github.com/tuqiang0330/learning.git # 如果是从远端clone来的就不用了
-        $ git push origin master
-        $ git pull origin
-
-+ 分支
++ branch and tag
 
         $ git branch new_branch     # 创建一个新分支
         $ git checkout new_branch   # 以上两条可以简化为 git checkout -b new_branch
@@ -62,6 +63,25 @@
         $ git merge --no-ff new_branch  # 强制不使用Fast forward模式，分支版本信息会保留
                                         # Git会尽量使用ff模式
 
+        $ git tag v1.0 [commit_id]  # 只是创建指针，所以非常快
+        $ git tag -a v1.0 -m "comments" [commit_id]
+        $ git show v1.0
+        $ git push origin v1.0
+        $ git tag -d v1.0
+
++ 远程版本库
+
+        $ git remote add origin https://github.com/tuqiang0330/learning.git # 如果是从远端clone来的就不用了
+        $ git remote -v
+        $ git push origin master
+        $ git pull origin
+
+        $ git checkout -b dev   # 在本地创建dev分支
+        $ git push origin dev   # 在远端创建dev分支。但此时其他人clone后只有master
+        $ git pull origin dev
+
+        $ git checkout -b dev origin/dev    # 根据远端dev分支创建本地dev分支
+
 + 存储工作现场
 
         $ git commit -m "new commit"
@@ -73,6 +93,11 @@
         $ git stash apply   # 恢复
         $ git stash drop    # 删除。恢复和删除可以用 git stash pop
 
+### GitHub ###
++ 只有从自己账户clone的才能push，需要先fork到自己的帐号下
++ 发起pull request向项目做贡献
++ 添加公钥
++ 工作区根目录放置.gitingore，可参考<https://github.com/github/gitignore>
 
 ### 学习资料 ###
 + [Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)

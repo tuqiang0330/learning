@@ -12,3 +12,16 @@
 ## 使用方式 ##
 1. `git clone https://github.com/tuqiang0330/learning.git`
 2. `./run_web.sh`
+
+--------------------------------------------------------------------------------
+
+## 计划 ##
++ NoSQL
++ 虚拟化
+    - docker
++ 安全
++ APP
+    - [Bmob](http://www.codenow.cn/)
+    - [mob](http://mob.com/)
+    - [友盟](http://www.umeng.com/)
+    - [棱镜](http://www.ljsdk.com/)

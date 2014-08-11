@@ -16,6 +16,11 @@
 --------------------------------------------------------------------------------
 
 ## 计划 ##
++ Android
+    - <http://android.eoe.cn/>
+    - <http://www.android-studio.org>
+    - <http://mobile.51cto.com/abased-443518_1.htm>
+    - libz.so
 + NoSQL
     - MongoDB
     - HBase

@@ -16,6 +16,8 @@
 --------------------------------------------------------------------------------
 
 ## 计划 ##
++ 客户端
+    - [从C++到Objective-C 的快速指南](http://www.oschina.net/translate/from-cplusplus-to-objective-c-a-quick-guide)
 + NoSQL
     - MongoDB
     - HBase

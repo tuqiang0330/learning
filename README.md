@@ -16,7 +16,12 @@
 --------------------------------------------------------------------------------
 
 ## 计划 ##
-+ 客户端
++ Android
+    - <http://android.eoe.cn/>
+    - <http://www.android-studio.org>
+    - <http://mobile.51cto.com/abased-443518_1.htm>
+    - libz.so
++ IOS
     - [从C++到Objective-C 的快速指南](http://www.oschina.net/translate/from-cplusplus-to-objective-c-a-quick-guide)
 + NoSQL
     - MongoDB

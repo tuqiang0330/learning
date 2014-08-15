@@ -21,6 +21,9 @@
     - <http://www.android-studio.org>
     - <http://mobile.51cto.com/abased-443518_1.htm>
     - libz.so
+    - <http://www.apkbus.com/design>
+    - <http://docs.eoeandroid.com/index.html>
+    - <http://android.toolib.net/index.html>
 + IOS
     - [从C++到Objective-C 的快速指南](http://www.oschina.net/translate/from-cplusplus-to-objective-c-a-quick-guide)
 + NoSQL
@@ -29,9 +32,6 @@
 + 消息队列
     - Kafka
     - 消息队列对比
-+ 分布式
-    - ZooKeeper
-    - 分布式服务框架
 + 安全
 + APP
     - [Bmob](http://www.codenow.cn/)

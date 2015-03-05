@@ -33,7 +33,7 @@
 + Watches
     - 被watch的节点变化后，通知client
     - 包括children和内容的变化
-    - watch时间保证顺序性
+    - watch事件保证顺序性
     - watch为一次性的，处理完watch事件后需要重新watch
     - client有可能错过两次watch中间的变更
 

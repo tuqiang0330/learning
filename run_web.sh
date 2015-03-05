@@ -19,7 +19,7 @@ find . -name "*.md" | while read md_file
 do
     echo ${md_file}
     file_name=$(echo ${md_file} | sed "s/\.md$//")
-    pandoc -f markdown -t html ${md_file} > ${HTML_DIR}/${file_name}.html
+    pandoc -f markdown -t html --html5 --atx-headers ${md_file} > ${HTML_DIR}/${file_name}.html
 done
 
 cd ${HTML_DIR}

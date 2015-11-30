@@ -1,4 +1,4 @@
-# NoSQL(Not Only SQL) #
+# NoSQL (Not Only SQL) #
 
 + to lean
     - Berkely DB

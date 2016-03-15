@@ -88,7 +88,7 @@
         $ vim   # 做了一些工作还没提交，但此时要紧急建立分支修改bug
         $ git stash
         $ git status    # 此时已经没有变更状态，可以切换到其他分支工作了
-        
+
         $ git stash list
         $ git stash apply   # 恢复
         $ git stash drop    # 删除。恢复和删除可以用 git stash pop
@@ -101,3 +101,5 @@
 
 ### 学习资料 ###
 + [Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
++ [Gogs Git Service](http://gogs.io)
++ [Gitlab Flow](https://about.gitlab.com/2014/09/29/gitlab-flow/)

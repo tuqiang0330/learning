@@ -40,6 +40,7 @@
 + [别闹了，费曼先生](http://book.douban.com/subject/1037602/)
 + [失控](http://book.douban.com/subject/5375620/)
 + [黑客与画家](http://book.douban.com/subject/6021440/)
++ [信息简史](http://book.douban.com/subject/25752043/)
 
 --------------------------------------------------------------------------------
 

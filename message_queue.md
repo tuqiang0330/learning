@@ -10,3 +10,4 @@
 ### 资料 ###
 + <http://kafka.apache.org>
 + [Kafka Manager]<https://github.com/yahoo/kafka-manager> 
++ [Kafka剖析]<http://www.infoq.com/cn/articles/kafka-analysis-part-1?utm_source=infoq&utm_medium=popular_widget&utm_content=homepage&utm_campaign=popular_content_list>

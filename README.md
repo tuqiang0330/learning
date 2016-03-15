@@ -22,9 +22,10 @@
     - <http://mobile.51cto.com/abased-443518_1.htm>
     - libz.so
     - <http://www.apkbus.com/design>
-    - <http://docs.eoeandroid.com/index.html>
+    - <http://wiki.eoeandroid.com/>
     - <http://android.toolib.net/index.html>
 + IOS
+    - [Start Developing iOS Apps](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214)
     - [从C++到Objective-C 的快速指南](http://www.oschina.net/translate/from-cplusplus-to-objective-c-a-quick-guide)
 + NoSQL
     - MongoDB
@@ -45,6 +46,8 @@
     - 分布式系统性能监控：Ganglia
 + 虚拟化
     - docker
++ 缓存
+    - [Mcrouter](https://github.com/facebook/mcrouter)
 
 --------------------------------------------------------------------------------
 

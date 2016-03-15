@@ -11,8 +11,9 @@
     - ![模块图](http://www.liaoxuefeng.com/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0)
     - 工作区：写代码的地方
     - 版本库：.git 文件夹
-        + 暂存区：`git add`后存储的地方
+        + stage区：`git add`后存储的地方
         + 分支：至少有一个master
++ 有些命令会有`--`这样的参数，是为了说明下一个参数是文件名，而不是分支或版本号之类。加上`--`是个好习惯。
 
 ### 常用命令 ###
 + 环境配置
@@ -35,20 +36,37 @@
 
 + 编辑文件并提交
 
-        $ touch 1.txt
-        $ git add 1.txt
-        $ git commit -m "add 1.txt" # 只commit暂存区里的变更
-        $ touch 2.txt
-        $ vim 1.txt
-        $ git add 2.txt 1.txt   # 编辑过的文件也需要add
-        $ git commit -m "add 2.txt; modify 1.txt"
-        $ git rm 1.txt
-        $ git commit -m "rm 1.txt"
+        $ vim <file>
+        $ git add <file>        # 将文件移至stage区
+        $ git commit -m "xxx"   # 只commit暂存区里的变更
+        $ git stash             # 保存工作区
+        $ git stash pop         # 恢复工作区
+        $ git stash list        # 查看stash
+
++ diff
+
+        $ git diff              # 工作区与stage区
+        $ git diff --cached     # stage区与版本库
+        $ git diff HEAD --      # 工作区与版本库
+        $ git diff master origin/master     # 本地master与fetch后的origin/master
 
 + 切换版本
+    + 对于尚未add的文件
 
-        $ git reset --hard commit_id
-        $ git reflog
+        $ git checkout -- <file>
+
+    + 对于已经add但尚未commit的文件
+
+        $ git reset HEAD <file>
+
+    + 对于已经commit的文件
+
+        $ git reset HEAD^   # 回退到上一个版本
+        $ git reset HEAD^^  # 回退到上上一个版本
+        $ git reset <commit_id>     # 回退到特定版本
+        $ git reset --hard <commit_id>  # 没有--hard，只回退版本，文件内容不变；有--hard，文件回退到对应版本
+
+        $ git reflog    # 显示本地的历史命令
 
 + branch and tag
 
@@ -81,6 +99,10 @@
         $ git pull origin dev
 
         $ git checkout -b dev origin/dev    # 根据远端dev分支创建本地dev分支
+
+        $ git fetch     # 尽量用fetch+merge代替pull
+        $ git diff master origin/master
+        $ git merge origin/master
 
 + 存储工作现场
 
